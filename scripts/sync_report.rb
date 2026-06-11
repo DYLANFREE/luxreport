@@ -84,8 +84,15 @@ end
 
 def validate!(source_html, site_html)
   img_refs = site_html.scan(/<img\b[^>]*\bsrc=["']([^"']+)["']/i).flatten
+  html_refs = site_html.scan(/(?:src|href)=["']([^"']+\.html(?:[?#][^"']*)?)["']/i).flatten
   bad_refs = img_refs.select { |ref| ref.start_with?("../", "/") }
   missing = img_refs.reject do |ref|
+    next true unless local_url?(ref)
+
+    clean, = split_url(ref)
+    REPO.join(clean).file?
+  end
+  missing_html = html_refs.reject do |ref|
     next true unless local_url?(ref)
 
     clean, = split_url(ref)
@@ -97,10 +104,11 @@ def validate!(source_html, site_html)
   errors = []
   errors << "Found image refs outside repo: #{bad_refs.uniq.join(', ')}" unless bad_refs.empty?
   errors << "Missing local image files: #{missing.uniq.join(', ')}" unless missing.empty?
+  errors << "Missing local HTML deps: #{missing_html.uniq.join(', ')}" unless missing_html.empty?
   errors << "SVG count changed: source=#{source_svg}, site=#{site_svg}" unless source_svg == site_svg
   raise errors.join("\n") unless errors.empty?
 
-  { img_refs: img_refs.length, source_svg: source_svg, site_svg: site_svg }
+  { img_refs: img_refs.length, html_refs: html_refs.length, source_svg: source_svg, site_svg: site_svg }
 end
 
 source_html = read(SOURCE)
