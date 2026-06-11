@@ -5332,7 +5332,7 @@ body { padding-top: 48px !important; }
   </div>
 
   <div class="fig">
-    <img src="img_kitchen_analogy.png" alt="分手厨房视角：灶台（计算核心）、冰箱（内存）、走廊（总线）" loading="lazy">
+    <img src="images/img_kitchen_analogy.png" alt="分手厨房视角：灶台（计算核心）、冰箱（内存）、走廊（总线）" loading="lazy">
     <div class="fig-cap">灶台 = 计算核心 · 冰箱 = 内存 · 走廊 = 总线 — 走廊的宽度和长度决定了数据搬运效率</div>
   </div>
 
@@ -5412,7 +5412,7 @@ body { padding-top: 48px !important; }
   <div class="section-verdict">降电压、提频率、扩预取、拆通道——20年来在同一条64位路上用尽了所有花招。</div>
 
   <div class="fig">
-    <img src="img_photo_dimm.png" alt="服务器主板俯视：CPU与DDR内存插槽之间隔了几厘米PCB走线" loading="lazy">
+    <img src="images/img_photo_dimm.png" alt="服务器主板俯视：CPU与DDR内存插槽之间隔了几厘米PCB走线" loading="lazy">
     <div class="fig-cap">服务器主板实物：蓝色竖排是DDR DIMM插槽，银色方块是CPU插座。看上去已经很近了，但PCB走线实际路径仍有5-8cm——后面你会看到HBM把这个距离压到了2-3mm</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -5520,7 +5520,7 @@ body { padding-top: 48px !important; }
   </table>
 
   <div class="fig">
-    <img src="img_ddr_frequency_wall.png" alt="DDR提频撞上四道物理墙：信号失真、串扰、功耗爆炸、刷新占用" loading="lazy">
+    <img src="images/img_ddr_frequency_wall.png" alt="DDR提频撞上四道物理墙：信号失真、串扰、功耗爆炸、刷新占用" loading="lazy">
     <div class="fig-cap">DDR提频的四道物理墙：信号失真、线路串扰、功耗三次方上涨、电容刷新占带宽</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -5547,7 +5547,7 @@ body { padding-top: 48px !important; }
   <p>GPU行业的应对是<strong>GDDR（Graphics DDR）</strong>——专为图形处理器设计的内存。核心改进有两个：一是把总线从64位加宽到256-384位，相当于走廊从1条车道拓宽到6条；二是把内存芯片焊在GPU同一块PCB板上，距离从主板级别缩短到板级。</p>
 
   <div class="fig">
-    <img src="img_ddr_to_gddr.png" alt="从DDR到GDDR的改进：通道加宽、距离缩短" loading="lazy">
+    <img src="images/img_ddr_to_gddr.png" alt="从DDR到GDDR的改进：通道加宽、距离缩短" loading="lazy">
     <div class="fig-cap">从DDR到GDDR：通道从1车道拓宽到6车道，仓库从隔壁街搬到同一栋楼</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -5604,7 +5604,7 @@ body { padding-top: 48px !important; }
   <p>数据跑1厘米和跑1毫米，功耗差一个数量级。真正的瓶颈不是「车跑多快」也不是「路有多宽」，是<strong>「仓库放多近」</strong>。</p>
 
   <div class="fig">
-    <img src="img_photo_gddr_pcb.png" alt="RTX 3090 PCB裸板：GDDR6X芯片围绕GPU die，距离2-4cm" loading="lazy">
+    <img src="images/img_photo_gddr_pcb.png" alt="RTX 3090 PCB裸板：GDDR6X芯片围绕GPU die，距离2-4cm" loading="lazy">
     <div class="fig-cap">RTX 3090裸板实物（GA102）：中间蓝绿色方块是GPU die，周围24颗标注LR22的灰色芯片是美光GDDR6X——离GPU 2-4cm，数据就在这段PCB走线上跑</div>
   </div>
 
@@ -5613,7 +5613,7 @@ body { padding-top: 48px !important; }
   <p>PCB板就那么大，GDDR芯片摊在GPU周围的平面上，数量有物理上限。想要更多带宽就需要更多芯片，但PCB放不下了。不可能把电路板无限做大——散热、信号完整性、制造成本都不允许。</p>
 
   <div class="fig">
-    <img src="gddr vs hbm.png" alt="GDDR vs HBM：PCB平面布局 vs 硅中介层紧贴布局，距离从厘米缩到毫米" loading="lazy">
+    <img src="images/gddr vs hbm.png" alt="GDDR vs HBM：PCB平面布局 vs 硅中介层紧贴布局，距离从厘米缩到毫米" loading="lazy">
     <div class="fig-cap">GDDR方案（左）：芯片散布在PCB上，离GPU 2-4cm；HBM方案（右）：通过硅中介层紧贴GPU，距离仅2-3mm</div>
   </div>
 
@@ -5630,7 +5630,7 @@ body { padding-top: 48px !important; }
   </div>
 
   <div class="fig">
-    <img src="img_ddr_gddr_hbm.png" alt="DDR → GDDR → HBM：从提频到加宽到垂直堆叠" loading="lazy">
+    <img src="images/img_ddr_gddr_hbm.png" alt="DDR → GDDR → HBM：从提频到加宽到垂直堆叠" loading="lazy">
     <div class="fig-cap">三条路线的演进：DDR 提频率 → GDDR 加宽度 → HBM 换框架（垂直堆叠 + 距离从厘米压到毫米 + 1024位总线）</div>
   </div>
 </section>
@@ -5645,7 +5645,7 @@ body { padding-top: 48px !important; }
   <p>HBM的设计思路一句话就能说清——<strong>把内存叠起来，贴到GPU旁边</strong>。不在平面上扩展，向上盖楼；不靠铜线远距离传输，靠硅穿孔垂直导通；不让内存隔几厘米喊话，直接焊在一块硅片上面对面。</p>
 
   <div class="fig">
-    <img src="img_hbm_stack.png" alt="HBM 堆叠内存结构剖面" loading="lazy">
+    <img src="images/img_hbm_stack.png" alt="HBM 堆叠内存结构剖面" loading="lazy">
     <div class="fig-cap">HBM 剖面：多层 DRAM + TSV 垂直互连 + Base Die + 硅中介层</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -5679,7 +5679,7 @@ body { padding-top: 48px !important; }
   </table>
 
   <div class="fig">
-    <img src="img_photo_cowos.png" alt="NVIDIA A100 SXM4实物：GPU die两侧紧贴HBM2E堆栈，距离仅2-3mm" loading="lazy">
+    <img src="images/img_photo_cowos.png" alt="NVIDIA A100 SXM4实物：GPU die两侧紧贴HBM2E堆栈，距离仅2-3mm" loading="lazy">
     <div class="fig-cap">A100 SXM4实物（图源：Lambda Labs）：紫色区域是GPU die（826mm²），左右两侧银灰色方块是HBM2E堆栈——距离仅2-3mm，和上图GDDR的几厘米形成鲜明对比</div>
   </div>
 
@@ -5832,7 +5832,7 @@ body { padding-top: 48px !important; }
   <p>HBM从设计图到成品要穿过五道工艺关卡。它们不是独立的：减薄了更脆（加重堆叠难度），叠多了更热（加重散热），TSV越多良率越低（加重测试报废）。每一步的设备和材料都集中在1-2家公司手里——这正是「卖铲人」逻辑的物理根基。</p>
 
   <div class="fig">
-    <img src="img_hbm_manufacturing.png" alt="从DRAM晶圆到HBM成品：晶圆制造 → TSV打孔 → 减薄 → 堆叠键合 → 测试" loading="lazy">
+    <img src="images/img_hbm_manufacturing.png" alt="从DRAM晶圆到HBM成品：晶圆制造 → TSV打孔 → 减薄 → 堆叠键合 → 测试" loading="lazy">
     <div class="fig-cap">从DRAM晶圆到HBM成品：晶圆制造 → TSV打孔 → 减薄 → 堆叠键合 → 测试</div>
   </div>
 
@@ -5859,7 +5859,7 @@ body { padding-top: 48px !important; }
 
   <p><strong>第三步：电镀填铜。</strong>把晶圆泡进硫酸铜溶液通电，铜离子从孔底往上一层层沉积。必须从底部开始往上填，不能从两边同时填——否则中间会留空洞。<strong>一个空洞 = 一条断路 = 这颗芯片废了。</strong>孔越深越窄，铜离子越难到达底部。如果填充速度不均匀，顶部先封口了底部还空着，就产生空洞（void）。</p>
   <div class="fig">
-    <img src="img_tsv_cross_section.png" alt="TSV硅通孔剖面结构：深宽比15:1的深孔、绝缘层、铜填充" loading="lazy">
+    <img src="images/img_tsv_cross_section.png" alt="TSV硅通孔剖面结构：深宽比15:1的深孔、绝缘层、铜填充" loading="lazy">
     <div class="fig-cap">TSV剖面：5-10μm直径的深孔穿透硅片，填满铜——一个空洞就是一条断路。右侧为多TSV阵列贯穿上下层DRAM</div>
   </div>
 
@@ -5919,7 +5919,7 @@ body { padding-top: 48px !important; }
 
   <p><strong>第三步：TSV露出（TSV Reveal）。</strong>磨到30μm后，之前从正面打的TSV铜柱从背面露出来了。露出的高度必须精确控制在几微米——太高会顶到上一层压碎，太低和上层微凸点接触不上导致虚焊。这一步是减薄环节最精密的部分：磨多了铜柱损坏，磨少了铜柱不露。</p>
   <div class="fig">
-    <img src="img_wafer_thinning.png" alt="晶圆减薄三步过程：750μm→30μm，TSV铜柱露出" loading="lazy">
+    <img src="images/img_wafer_thinning.png" alt="晶圆减薄三步过程：750μm→30μm，TSV铜柱露出" loading="lazy">
     <div class="fig-cap">晶圆减薄三阶段：750μm原始厚度 → 研磨到30μm（比头发丝还薄）→ TSV铜柱从背面精确露出</div>
   </div>
 
@@ -6048,7 +6048,7 @@ body { padding-top: 48px !important; }
   <p>8层时差距不大。到12层、16层，MR-MUF的优势急剧放大——这就是三星HBM3E认证反复失败的物理根源，也是2025年中SK海力士62% vs 三星17%格局的技术底层（2026年起三星借HBM4认证翻身，见后文产业格局章节）。</p>
 
   <div class="fig">
-    <img src="img_mrmuf_vs_tcb.png" alt="MR-MUF vs TCB 两种堆叠工艺对比" loading="lazy">
+    <img src="images/img_mrmuf_vs_tcb.png" alt="MR-MUF vs TCB 两种堆叠工艺对比" loading="lazy">
     <div class="fig-cap">两条工艺路线：MR-MUF一次堆叠整体固化 vs TCB逐层加热加压键合</div>
   </div>
 
@@ -6109,7 +6109,7 @@ body { padding-top: 48px !important; }
   <p>两道测试缺一不可：堆叠前光学筛查（降低报废率）+ 堆叠后电性能测试（确保出厂品质）。</p>
 
   <div class="fig">
-    <img src="img_yield_cascade.png" alt="良率级联衰减：层数越多，整体良率下降越快" loading="lazy">
+    <img src="images/img_yield_cascade.png" alt="良率级联衰减：层数越多，整体良率下降越快" loading="lazy">
     <div class="fig-cap">良率级联衰减：单层差2%看起来不多，叠8层后差14%，叠16层后差24%——堆叠前筛查是止损的关键</div>
   </div>
 
@@ -6133,7 +6133,7 @@ body { padding-top: 48px !important; }
 
   <p>不解决散热会怎样：性能降频（芯片自动保护）、数据出错率上升（高温下电容漏电更快）、寿命缩短（DRAM寿命和温度指数反相关）、极端情况焊点融化芯片分层。NVIDIA的功耗/温度验收标准极其严格：HBM运行温度必须控制在<strong>95°C以下</strong>（部分规格85°C），功耗不能超过预算。三星HBM3E认证失败的原因之一就是功耗超标。</p>
   <div class="fig">
-    <img src="img_thermal_stack.png" alt="8层HBM堆叠紧邻GPU的热分布：中间层温度最高" loading="lazy">
+    <img src="images/img_thermal_stack.png" alt="8层HBM堆叠紧邻GPU的热分布：中间层温度最高" loading="lazy">
     <div class="fig-cap">8层堆叠的热分布：中间层（第4-5层）温度最高，被上下层「闷」住；GPU 700W热源紧邻；NVIDIA验收标准95°C</div>
   </div>
 
@@ -6156,7 +6156,7 @@ body { padding-top: 48px !important; }
   <p><strong>散热界面材料（TIM）：</strong>信越化学（日本）全球第一，Dow（陶氏，美国），英维克（中国）做数据中心液冷系统，同时供应Google TPUv7和NVIDIA。</p>
 
   <div class="fig">
-    <img src="img_cowos_structure.png" alt="CoWoS 2.5D 封装结构" loading="lazy">
+    <img src="images/img_cowos_structure.png" alt="CoWoS 2.5D 封装结构" loading="lazy">
     <div class="fig-cap">最终形态：CoWoS封装——GPU居中 + HBM两侧 + 硅中介层，五个难点的解法在这里汇聚</div>
   </div>
 
@@ -6598,7 +6598,7 @@ body { padding-top: 48px !important; }
   </div>
 
   <div class="fig">
-    <img src="img_power_to_compute.png" alt="从电力到算力的完整链路" loading="lazy">
+    <img src="images/img_power_to_compute.png" alt="从电力到算力的完整链路" loading="lazy">
     <div class="fig-cap">完整链路：供电 → 配电 → 计算（GPU+HBM）→ 散热 — HBM是链路中成本和技术密度最高的环节之一</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -6814,7 +6814,7 @@ body { padding-top: 48px !important; }
   <p class="src-note">份额来源：Counterpoint Research（2025 Q3收入口径，截至2026年6月）。剧情第二次翻转：三星HBM3E放量，一个季度从17%冲回35%、反超美光重回第二。往前看两组数字——TrendForce预测2026全年位元产出：SK约50%、三星约28%；NVIDIA的HBM4采购配额：SK约55%、三星约25%、美光约20%。SK的「62%独霸」时代已结束，三足格局正在成形。</p>
 
   <div class="fig">
-    <img src="img_gpu_chip.png" alt="GPU 芯片实物" loading="lazy">
+    <img src="images/img_gpu_chip.png" alt="GPU 芯片实物" loading="lazy">
     <div class="fig-cap">AI加速卡实物：中间大方块是GPU die，周围黑色方块是HBM堆栈</div>
   </div>
 <div style="max-width:860px;margin:14px auto 6px;padding:12px 18px;background:rgba(255,255,255,.45);border:1px solid rgba(45,90,63,.15);border-radius:10px;font-size:.9rem;line-height:1.75;">
@@ -6875,7 +6875,7 @@ body { padding-top: 48px !important; }
   <p><strong>风险：</strong>台海地缘政治——这是最大的非经营风险，也是唯一实质性风险。</p>
 
   <div class="fig">
-    <img src="img_cowos_challenges.png" alt="CoWoS 封装两大挑战" loading="lazy">
+    <img src="images/img_cowos_challenges.png" alt="CoWoS 封装两大挑战" loading="lazy">
     <div class="fig-cap">CoWoS两大物理挑战：5000mm²硅片易碎 + GPU/HBM热膨胀不匹配</div>
   </div>
 
@@ -16026,7 +16026,7 @@ function toggleFold(id){
         <div style="font-size:.82rem;color:var(--text-dim);margin-top:4px;">BTC价格（对数坐标）与减半周期的关系 · 颜色 = 距下次减半的天数</div>
       </div>
       <div style="background:var(--bg-card);border:1px solid rgba(45,90,63,.15);border-radius:16px;padding:20px;overflow:hidden;">
-        <img src="img_btc_stock_to_flow.png" alt="Bitcoin Stock-to-Flow Model" style="width:100%;height:auto;border-radius:8px;display:block;"/>
+        <img src="images/img_btc_stock_to_flow.png" alt="Bitcoin Stock-to-Flow Model" style="width:100%;height:auto;border-radius:8px;display:block;"/>
       </div>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px;">
         <div style="background:rgba(255,0,0,.06);border-radius:10px;padding:12px 14px;text-align:center;border:1px solid rgba(255,0,0,.12);">
